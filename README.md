@@ -9,8 +9,11 @@ LLM Chat is a web-based chatbot application developed using SvelteKit and powere
 
 ## Installation
 1. Clone the repository
+```bash
+git clone https://github.com/Gadersd/llm-chat.git
+```
 
-2. Navigate to the project directory
+3. Navigate to the project directory
 ```bash
 cd llm-chat
 ```
