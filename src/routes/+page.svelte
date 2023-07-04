@@ -28,7 +28,7 @@
     let ws: WebSocket;
 
     // Automatically scroll to bottom on message update
-    $: scrollToEnd(messageContainer);
+    $: messages, scrollToEnd(messageContainer);
 
     // Scroll to the last message
     async function scrollToEnd(container) {
