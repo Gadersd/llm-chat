@@ -92,7 +92,7 @@
             if (token !== "") {
                 buffer += token;
                 if (definitelyNoExtraneousToken(buffer, extraneous)) {
-                    add_token(token);
+                    add_token(buffer);
                     buffer = '';
                 } else if (definitelyHasExtraneousToken(buffer, extraneous)) {
                     // Exit early to prevent assistant playing the part of the user
@@ -119,6 +119,7 @@
 
             ws.onmessage = (event) => {
                 const response = event.data;
+                console.log(response);
                 handleToken(response);
             };
 
